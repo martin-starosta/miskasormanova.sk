@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mgr. Michala Šormanová – Fitness & Výživa</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .container {
+            max-width: 600px;
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            backdrop-filter: blur(10px);
+        }
+        
+        h1 {
+            color: #2c3e50;
+            font-size: 2.2em;
+            margin-bottom: 30px;
+            font-weight: 300;
+        }
+        
+        .services {
+            list-style: none;
+            margin: 30px 0;
+        }
+        
+        .services li {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            margin: 15px 0;
+            padding: 15px;
+            background: rgba(102, 126, 234, 0.1);
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+        }
+        
+        .services li:hover {
+            transform: translateX(5px);
+        }
+        
+        .emoji {
+            font-size: 1.5em;
+            margin-right: 15px;
+        }
+        
+        .service-text {
+            font-size: 1.1em;
+            color: #2c3e50;
+            font-weight: 500;
+        }
+        
+        .booking {
+            margin-top: 40px;
+            padding: 20px;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            border-radius: 15px;
+            color: white;
+        }
+        
+        .booking h2 {
+            margin-bottom: 15px;
+            font-size: 1.4em;
+        }
+        
+        .booking-link {
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.2);
+            color: white;
+            text-decoration: none;
+            padding: 12px 25px;
+            border-radius: 25px;
+            font-weight: bold;
+            transition: background 0.3s ease;
+        }
+        
+        .booking-link:hover {
+            background: rgba(255, 255, 255, 0.3);
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                margin: 20px;
+                padding: 30px 20px;
+            }
+            
+            h1 {
+                font-size: 1.8em;
+            }
+            
+            .services li {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .emoji {
+                margin-right: 0;
+                margin-bottom: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Mgr. Michala Šormanová – Fitness & Výživa</h1>
+        
+        <ul class="services">
+            <li>
+                <span class="emoji">📲</span>
+                <span class="service-text">ONLINE NUTRIČNÁ KOUČKA</span>
+            </li>
+            <li>
+                <span class="emoji">🥗</span>
+                <span class="service-text">JEDÁLNIČKY NA MIERU</span>
+            </li>
+            <li>
+                <span class="emoji">🔬</span>
+                <span class="service-text">Test-based Nutrition</span>
+            </li>
+            <li>
+                <span class="emoji">💪</span>
+                <span class="service-text">FITNESS TRÉNERKA @rmsportresort</span>
+            </li>
+        </ul>
+        
+        <div class="booking">
+            <h2>📆 BOOKING KONZULÁCIA</h2>
+            <a href="https://miskacoach.youcanbook.me" class="booking-link" target="_blank">
+                miskacoach.youcanbook.me
+            </a>
+        </div>
+    </div>
+</body>
+</html>
